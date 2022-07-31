@@ -1,7 +1,11 @@
+import axios from 'axios';
+
 import './App.css';
 import Example from './components/Example';
 
-function App() {
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL;
+
+const App = () => {
     return (
         <div className='App'>
             <header className='App-header'>
@@ -9,6 +13,6 @@ function App() {
             </header>
         </div>
     );
-}
+};
 
 export default App;
