@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import './App.css';
-import Example from './components/Example';
+import Example from './Example';
 
 axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL;
 
